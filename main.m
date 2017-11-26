@@ -4,14 +4,16 @@
 
 function choice = main();
     meny();
+    degree=[];
+    points=[];
     while true
-        choice = input('\nVälj ett menyval')
+        choice = input('\nVÃ¤lj ett menyval')
         if choice == 1
             askdegree();
         elseif choice == 2
             askpoints();
         end
-    if degree ~= false && points ~= false
+    if ~isempty(degree) && ~isempty(points)
         if choice == 3
         end
     end
